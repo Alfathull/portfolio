@@ -10,11 +10,11 @@ export default function Stack() {
     },
     {
       label: "Database",
-      items: ["PostgreSQL", "MySQL", "DBeaver", "Complex SQL Queries"],
+      items: ["PostgreSQL", "MySQL"],
     },
     {
-      label: "QA & DevOps",
-      items: ["Playwright", "Postman", "JMeter", "Docker", "Git / Bitbucket", "Jira / Confluence"],
+      label: "Tools & QA",
+      items: ["Playwright", "Postman", "JMeter", "Docker", "Git / Bitbucket", "Jira / Confluence", "DBeaver", "Complex SQL Queries"],
     },
   ];
 
