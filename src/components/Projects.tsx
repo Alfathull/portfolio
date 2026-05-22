@@ -41,6 +41,7 @@ const projects: Project[] = [
       "Delivered project on schedule despite inheriting significant technical debt",
     ],
     screenshot: "/project-xpeng.png",
+    link: "https://xpeng.co.id/id",
   },
   {
     index: "03 / 06",
@@ -58,6 +59,7 @@ const projects: Project[] = [
       "Performance optimized via code splitting, lazy loading, and asset compression",
     ],
     screenshot: "/project-underarmour.png",
+    link: "https://www.underarmour.co.id/",
   },
   {
     index: "04 / 06",
@@ -72,6 +74,7 @@ const projects: Project[] = [
       "Pixel-perfect implementation across all breakpoints, validated with visual regression tests",
     ],
     link: "https://soursallyglobal.com/",
+    screenshot: "/project-soursally.png",
   },
   {
     index: "05 / 06",
@@ -85,6 +88,8 @@ const projects: Project[] = [
       "Developed mobile-responsive transaction history and news features",
       "Led frontend developer onboarding and structured team task tracking",
     ],
+    link: "https://erafone.com/artikel",
+    screenshot: "/project-erafone.png",
   },
   {
     index: "06 / 06",
