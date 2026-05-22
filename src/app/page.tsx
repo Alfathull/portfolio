@@ -30,16 +30,16 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
-      <hr className="border-t border-border mx-10" />
+      <hr className="border-t border-border mx-5 md:mx-10" />
       <About />
       <MetricsBand />
       <Stack />
       <Projects />
-      <hr className="border-t border-border mx-10" />
+      <hr className="border-t border-border mx-5 md:mx-10" />
       <Experience />
-      <hr className="border-t border-border mx-10" />
+      <hr className="border-t border-border mx-5 md:mx-10" />
       <Education />
-      <hr className="border-t border-border mx-10" />
+      <hr className="border-t border-border mx-5 md:mx-10" />
       <Contact />
       <Footer />
     </>

@@ -9,7 +9,7 @@ export default function Education() {
   ];
 
   return (
-    <section id="education" className="fade-in py-[100px] px-10 max-w-[1100px] mx-auto">
+    <section id="education" className="fade-in py-[100px] px-5 md:px-10 max-w-[1100px] mx-auto">
       <div className="font-mono text-[11px] font-medium text-blue tracking-[0.14em] uppercase mb-3">
         Education
       </div>

@@ -13,14 +13,14 @@ export default function Stack() {
       items: ["PostgreSQL", "MySQL"],
     },
     {
-      label: "Tools & QA",
-      items: ["Playwright", "Postman", "JMeter", "Docker", "Git / Bitbucket", "Jira / Confluence", "DBeaver", "Complex SQL Queries"],
+      label: "Tools",
+      items: ["Playwright", "Postman", "JMeter", "Docker", "Git / Bitbucket", "Jira / Confluence", "DBeaver"],
     },
   ];
 
   return (
     <div className="bg-navy py-20">
-      <div className="max-w-[1100px] mx-auto px-10">
+      <div className="max-w-[1100px] mx-auto px-5 md:px-10">
         <div className="font-mono text-[11px] font-medium text-white/40 tracking-[0.14em] uppercase mb-3">
           Technical Stack
         </div>
@@ -35,7 +35,7 @@ export default function Stack() {
           {categories.map((cat) => (
             <div
               key={cat.label}
-              className="bg-navy p-7 border-r border-white/6 last:border-r-0"
+              className="bg-navy p-7"
             >
               <div className="font-mono text-[10px] font-medium text-sky tracking-[0.14em] uppercase mb-4">
                 {cat.label}

@@ -8,7 +8,7 @@ export default function MetricsBand() {
   ];
 
   return (
-    <div className="bg-blue py-16 px-10">
+    <div className="bg-blue py-16 px-5 md:px-10">
       <div className="max-w-[1100px] mx-auto grid grid-cols-2 md:grid-cols-5 gap-10 text-center">
         {metrics.map((m) => (
           <div key={m.label}>

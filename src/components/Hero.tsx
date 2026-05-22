@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="px-10 max-w-[1100px] mx-auto">
+    <div className="px-5 md:px-10 max-w-[1100px] mx-auto">
       <section
         id="hero"
         className="min-h-screen flex flex-col justify-center pt-[120px] pb-20 relative"
@@ -30,7 +30,7 @@ export default function Hero() {
         </p>
 
         {/* Stats */}
-        <div className="flex gap-12 mb-13">
+        <div className="grid grid-cols-2 md:flex md:gap-12 gap-6 mb-13">
           {[
             { num: "6+", label: "Client Products" },
             { num: "2+", label: "Years Experience" },

@@ -142,7 +142,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="fade-in py-[100px] px-10 max-w-[1100px] mx-auto"
+      className="fade-in py-[100px] px-5 md:px-10 max-w-[1100px] mx-auto"
     >
       <div className="font-mono text-[11px] font-medium text-blue tracking-[0.14em] uppercase mb-3">
         Selected Work
