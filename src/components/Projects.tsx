@@ -1,3 +1,8 @@
+"use client";
+
+import TiltCard from "./TiltCard";
+import ImageWithSkeleton from "./ImageWithSkeleton";
+
 interface Metric {
   num: string;
   label: string;
@@ -108,32 +113,10 @@ const projects: Project[] = [
   },
 ];
 
-import Image from "next/image";
-
-function ScreenshotPlaceholder() {
-  return (
-    <div className="aspect-video bg-frost border border-border rounded-[4px] flex flex-col items-center justify-center gap-2.5 text-stone text-[12px] font-mono tracking-[0.04em]">
-      <svg
-        width="32"
-        height="32"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        className="opacity-35"
-      >
-        <rect x="2" y="3" width="20" height="14" rx="2" />
-        <path d="M8 21h8M12 17v4" />
-      </svg>
-      Screenshot — add yours here
-    </div>
-  );
-}
-
 function ProjectScreenshot({ src, alt }: { src: string; alt: string }) {
   return (
     <div className="aspect-video relative bg-frost border border-border rounded-[4px] overflow-hidden">
-      <Image src={src} alt={alt} fill className="object-cover" />
+      <ImageWithSkeleton src={src} alt={alt} fill className="object-cover" />
     </div>
   );
 }
@@ -156,7 +139,7 @@ export default function Projects() {
 
       <div className="flex flex-col gap-px bg-border border border-border rounded-[4px] overflow-hidden">
         {projects.map((project) => (
-          <div
+          <TiltCard
             key={project.title}
             className="bg-white p-10 md:px-12 grid grid-cols-1 md:grid-cols-[1fr_1.2fr] gap-15 items-start hover:bg-[#FAFCFF] transition-colors duration-200"
           >
@@ -178,7 +161,7 @@ export default function Projects() {
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="font-mono text-[10px] font-medium px-2.5 py-[3px] border border-border text-stone rounded-[2px] bg-cream"
+                    className="font-mono text-[10px] font-medium px-2.5 py-[3px] border border-border text-stone rounded-[2px] bg-cream hover:border-blue hover:text-blue transition-colors duration-200 cursor-default"
                   >
                     {tag}
                   </span>
@@ -230,7 +213,7 @@ export default function Projects() {
                 <ProjectScreenshot src={project.screenshot} alt={project.title} />
               ) : null}
             </div>
-          </div>
+          </TiltCard>
         ))}
       </div>
     </section>

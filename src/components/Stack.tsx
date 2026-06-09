@@ -1,3 +1,5 @@
+"use client";
+
 export default function Stack() {
   const categories = [
     {
@@ -35,7 +37,7 @@ export default function Stack() {
           {categories.map((cat) => (
             <div
               key={cat.label}
-              className="bg-navy p-7"
+              className="bg-navy p-7 group hover:bg-white/[0.02] transition-colors duration-300"
             >
               <div className="font-mono text-[10px] font-medium text-sky tracking-[0.14em] uppercase mb-4">
                 {cat.label}
@@ -44,7 +46,7 @@ export default function Stack() {
                 {cat.items.map((item) => (
                   <div
                     key={item}
-                    className="text-sm text-white/75 flex items-center gap-2"
+                    className="text-sm text-white/75 flex items-center gap-2 hover:text-white hover:translate-x-1 transition-all duration-200 cursor-default"
                   >
                     <span className="w-1 h-1 rounded-full bg-sky shrink-0" />
                     {item}

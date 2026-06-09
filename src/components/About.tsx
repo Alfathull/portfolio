@@ -1,4 +1,6 @@
-import Image from "next/image";
+"use client";
+
+import ImageWithSkeleton from "./ImageWithSkeleton";
 
 export default function About() {
   const tags = [
@@ -20,7 +22,7 @@ export default function About() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-start">
         {/* Photo */}
         <div className="aspect-[3/4] relative bg-frost border border-border rounded-[4px] overflow-hidden">
-          <Image
+          <ImageWithSkeleton
             src="/photo.jpeg"
             alt="Miftah Alfathul Rizky"
             fill
@@ -76,7 +78,7 @@ export default function About() {
             {tags.map((tag) => (
               <span
                 key={tag}
-                className="font-mono text-[11px] font-medium px-3 py-[5px] border border-border rounded-[2px] text-stone tracking-[0.04em] bg-white"
+                className="font-mono text-[11px] font-medium px-3 py-[5px] border border-border rounded-[2px] text-stone tracking-[0.04em] bg-white hover:border-blue hover:text-blue transition-colors duration-200 cursor-default"
               >
                 {tag}
               </span>

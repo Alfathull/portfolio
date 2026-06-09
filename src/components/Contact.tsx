@@ -1,3 +1,7 @@
+"use client";
+
+import MagneticButton from "./MagneticButton";
+
 export default function Contact() {
   return (
     <section id="contact" className="fade-in py-[100px] px-5 md:px-10 max-w-[1100px] mx-auto text-center">
@@ -13,9 +17,9 @@ export default function Contact() {
       </p>
 
       <div className="flex gap-4 justify-center flex-wrap">
-        <a
+        <MagneticButton
           href="mailto:alfathul1717@gmail.com"
-          className="flex items-center gap-2.5 px-6 py-3.5 bg-white border border-border rounded-[4px] text-sm font-medium text-ink hover:border-blue hover:text-blue transition-colors duration-200"
+          className="flex items-center gap-2.5 px-6 py-3.5 bg-white border border-border rounded-[4px] text-sm font-medium text-ink hover:border-blue hover:text-blue transition-colors duration-200 hover-lift"
         >
           <svg
             width="16"
@@ -29,10 +33,10 @@ export default function Contact() {
             <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
           </svg>
           alfathul1717@gmail.com
-        </a>
-        <a
+        </MagneticButton>
+        <MagneticButton
           href="tel:+6285155099180"
-          className="flex items-center gap-2.5 px-6 py-3.5 bg-white border border-border rounded-[4px] text-sm font-medium text-ink hover:border-blue hover:text-blue transition-colors duration-200"
+          className="flex items-center gap-2.5 px-6 py-3.5 bg-white border border-border rounded-[4px] text-sm font-medium text-ink hover:border-blue hover:text-blue transition-colors duration-200 hover-lift"
         >
           <svg
             width="16"
@@ -45,12 +49,12 @@ export default function Contact() {
             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.86 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.77 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
           </svg>
           +62 851 5509 9180
-        </a>
-        <a
+        </MagneticButton>
+        <MagneticButton
           href="https://linkedin.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2.5 px-6 py-3.5 bg-white border border-border rounded-[4px] text-sm font-medium text-ink hover:border-blue hover:text-blue transition-colors duration-200"
+          className="flex items-center gap-2.5 px-6 py-3.5 bg-white border border-border rounded-[4px] text-sm font-medium text-ink hover:border-blue hover:text-blue transition-colors duration-200 hover-lift"
         >
           <svg
             width="16"
@@ -65,10 +69,10 @@ export default function Contact() {
             <circle cx="4" cy="4" r="2" />
           </svg>
           LinkedIn Profile
-        </a>
-        <a
+        </MagneticButton>
+        <MagneticButton
           href="#"
-          className="flex items-center gap-2.5 px-6 py-3.5 bg-white border border-border rounded-[4px] text-sm font-medium text-ink hover:border-blue hover:text-blue transition-colors duration-200"
+          className="flex items-center gap-2.5 px-6 py-3.5 bg-white border border-border rounded-[4px] text-sm font-medium text-ink hover:border-blue hover:text-blue transition-colors duration-200 hover-lift"
         >
           <svg
             width="16"
@@ -82,7 +86,7 @@ export default function Contact() {
             <path d="M9 18c-4.51 2-5-2-7-2" />
           </svg>
           GitHub
-        </a>
+        </MagneticButton>
       </div>
     </section>
   );

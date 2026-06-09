@@ -1,3 +1,7 @@
+"use client";
+
+import AnimatedCounter from "./AnimatedCounter";
+
 export default function MetricsBand() {
   const metrics = [
     { num: "60%", label: "Regression time reduced via Playwright automation" },
@@ -12,9 +16,10 @@ export default function MetricsBand() {
       <div className="max-w-[1100px] mx-auto grid grid-cols-2 md:grid-cols-5 gap-10 text-center">
         {metrics.map((m) => (
           <div key={m.label}>
-            <div className="font-serif text-[44px] text-white leading-none mb-2">
-              {m.num}
-            </div>
+            <AnimatedCounter
+              value={m.num}
+              className="font-serif text-[44px] text-white leading-none mb-2"
+            />
             <div className="text-[12px] text-white/60 font-medium tracking-[0.04em] leading-[1.4]">
               {m.label}
             </div>
